@@ -12,7 +12,7 @@ public class GenerateCoverLetter
     String jobPortal = "LinkedIn";
     String message = "Dear **HIRER_NAME**,\n" +
             "\n" +
-            "I hope you are well! Before I go on, I'd love it if you took glanced at my portfolio - **PORTFOLIO_LINK** because it tells my story in an appealing way.\n" +
+            "I hope you are well! Before I go on, I'd love it if you glanced at my portfolio - **PORTFOLIO_LINK** because it tells my story in an appealing way.\n" +
             "\n" +
             "I was excited when I saw the **DEV_ROLE** listing at **COMPANY_NAME** that was posted on **JOB_PORTAL** as it closely matches the exact role that I am looking for. I have over 5 years of experience in building software, and I’m highly enthusiastic about joining your team so I can contribute what I know, and also learn what I can.\n" +
             "\n" +
