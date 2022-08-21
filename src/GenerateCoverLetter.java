@@ -23,7 +23,7 @@ public class GenerateCoverLetter
             "Thank you,\n" +
             "\n" +
             "Pravasith Chinthoju. \n" +
-            "[www.pravasith.com](http://www.pravasith.com/) \n" +
+            "[pravasith.com](https://pravasith.com/) \n" +
             "[pravasith@gmail.com](mailto:pravasith@gmail.com) \n" +
             "+1 647 786 4048";
 
@@ -61,12 +61,19 @@ public class GenerateCoverLetter
         temp = input.nextLine();
         jobPortal = temp.length() > 0 ? temp : jobPortal;
 
+        System.out.print("Needs format? (default no): ");
+        temp = input.nextLine();
+
         message = message
                 .replace("HIRER_NAME", hiringPerson)
                 .replace("PORTFOLIO_LINK", "https://pravasith.com")
                 .replace("DEV_ROLE", hiringRole)
                 .replace("COMPANY_NAME", hiringCompany)
                 .replace("JOB_PORTAL", jobPortal);
+
+        if(temp.length() == 0) {
+            message = message.replace("**", "");
+        }
 
         StringSelection stringSelection = new StringSelection(message);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
