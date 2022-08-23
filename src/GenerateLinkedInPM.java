@@ -12,7 +12,7 @@ public class GenerateLinkedInPM
             "\n" +
             "I hope you are well! Before I go on, I'd love it if you glanced at my portfolio - **PORTFOLIO_LINK**.\n" +
             "\n" +
-            "Thank you for connecting with me on **PORTAL_NAME**. I am a Full Stack Developer, new to Canada, with Five years of experience in tech and currently seeking new full-time opportunities. I would love to chat about whether my background might be a fit for any of the openingsCOMPANY_NAME.\n" +
+            "Thank you for connecting with me on **PORTAL_NAME**. I am a Full Stack Developer, new to Canada, with Five years of experience in tech, and currently seeking new full-time opportunities. I would love to chat about whether my background might be a fit for any of the openingsCOMPANY_NAME.\n" +
             "\n" +
             "Thanks in advance,\n" +
             "\n" +
@@ -31,7 +31,7 @@ public class GenerateLinkedInPM
 
         System.out.print("Hiring person name: ");
         temp = input.nextLine();
-        username =  temp;
+        username =  " " + temp;
 
 
         System.out.print("Company name: ");
@@ -49,7 +49,7 @@ public class GenerateLinkedInPM
                 .replace("USERNAME", username)
                 .replace("PORTFOLIO_LINK", "https://pravasith.com")
                 .replace("COMPANY_NAME", hiringCompany)
-                .replace("JOB_PORTAL", jobPortal);
+                .replace("PORTAL_NAME", jobPortal);
 
         if(temp.length() == 0) {
             message = message.replace("**", "");
