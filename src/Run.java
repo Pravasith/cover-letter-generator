@@ -7,7 +7,7 @@ public class Run {
         Scanner input = new Scanner(System.in);
         String temp;
 
-        System.out.println("Choose:\n" +
+        System.out.print("Choose:\n" +
                 "LinkedIn message (L) or Cover letter(C):");
         temp = input.nextLine();
 
@@ -29,7 +29,7 @@ public class Run {
 
         }
 
-        run();
+//        run();
     }
 
 }

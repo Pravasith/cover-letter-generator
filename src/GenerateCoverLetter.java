@@ -23,8 +23,8 @@ public class GenerateCoverLetter
             "Thank you,\n" +
             "\n" +
             "Pravasith Chinthoju. \n" +
-            "[www.pravasith.com](http://www.pravasith.com/) \n" +
-            "[pravasith@gmail.com](mailto:pravasith@gmail.com) \n" +
+            "www.pravasith.com \n" +
+            "pravasith@gmail.com \n" +
             "+1 647 786 4048";
 
     @Override
@@ -66,7 +66,7 @@ public class GenerateCoverLetter
 
         message = message
                 .replace("HIRER_NAME", hiringPerson)
-                .replace("PORTFOLIO_LINK", "https://pravasith.com")
+                .replace("PORTFOLIO_LINK", "www.pravasith.com")
                 .replace("DEV_ROLE", hiringRole)
                 .replace("COMPANY_NAME", hiringCompany)
                 .replace("JOB_PORTAL", jobPortal);
