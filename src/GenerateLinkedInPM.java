@@ -47,6 +47,7 @@ public class GenerateLinkedInPM
         System.out.print("Needs format? (default no): ");
         temp = input.nextLine();
 
+
         message = message
                 .replace("USERNAME", username)
                 .replace("PORTFOLIO_LINK", "https://pravasith.com/")
